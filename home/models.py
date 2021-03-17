@@ -2,6 +2,7 @@ from django.db import models
 from django import forms
 from user.models import Account
 from django.utils.timezone import now
+from ckeditor.fields import RichTextField
 
 
 # Create your models here.
@@ -19,11 +20,8 @@ class Post(models.Model):
     postId = models.AutoField(primary_key=True, auto_created=True)
     postTitle = models.CharField(max_length=200)
     postTimeDate = models.DateTimeField(auto_now_add=True, auto_now=False, blank=True)
-    postInC = models.TextField()
-    postInCplus = models.TextField()
-    postInPython = models.TextField()
     postDescriptions = models.TextField()
-    postUrl = models.TextField(blank=True)
+    postBody = RichTextField(blank=True, null=True)
     postImage = models.ImageField(blank=True, null=True)
     views = models.IntegerField(default=0)
 
@@ -44,7 +42,7 @@ class Post(models.Model):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['category', 'postTitle', 'postInCplus', 'postImage']
+        fields = ['category', 'postTitle', 'postImage']
 
 
 class Contact(models.Model):

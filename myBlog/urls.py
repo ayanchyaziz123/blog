@@ -20,9 +20,9 @@ from . import settings
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-admin.site.site_header = "Ayan Blogs"
-admin.site.site_title = "Ayan Admin Panel"
-admin.site.index_title = "Welcomee Ayan Admin Panel"
+admin.site.site_header = "Farin Blog"
+admin.site.site_title = "FarinAdmin Panel"
+admin.site.index_title = "Welcomee Farin Admin Panel"
 
 urlpatterns = [
     path('admin/', admin.site.urls),

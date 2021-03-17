@@ -87,67 +87,16 @@
                         </div>                        </div>
 
 
+
+                        <p>{{post.postBody |safe}}</p>
+
+
                           <!--button c,c++ and python-->
-
-
-           <div class="container">
-
-  <p class="post d-inline blog-font-style"><strong>Descriptions:</strong></p> <p style="font-family:bitter,georgia,"times new roman",times,serif;">{{ post.postDescriptions  | safe | linebreaks }}</p><br>
-  <div id="accordion">
-    <div class="card m-0 p-0">
-     <a style="font-weight:bold;"  class="card-link text-dark" data-toggle="collapse" href="#collapseOne">
-      <div class="card-header bg-white">
-
-          C
-
-      </div>
-      </a>
-      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-        <div class="card-body">
-        <pre  class="prettyprint">{{ post.postInC}}</pre>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-     <a style="font-weight:bold;" class="collapsed card-link text-dark" data-toggle="collapse" href="#collapseTwo">
-      <div class="card-header bg-white">
-
-        C++
-
-      </div>
-       </a>
-      <div id="collapseTwo" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-        <table class="table">
-          <pre  class="prettyprint">{{ post.postInCplus }}</pre>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-       <a style="font-weight:bold;"  class="collapsed card-link text-dark" data-toggle="collapse" href="#collapseThree">
-      <div class="card-header bg-white">
-
-          Python
-
-      </div>
-       </a>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
-        <div class="card-body">
-        <pre  class="prettyprint">{{ post.postInPython}}</pre>
-
-
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-<br>
-
-  <a class=" btn text-white btn-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-   <i class="fa fa-comment" aria-hidden="true"></i> comment</a>
 </div>
+
+ <a class=" btn text-white btn-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+   <i class="fa fa-comment" aria-hidden="true"></i> comment</a>
+
 
 
 <div class="cared mt-5 p-3">
@@ -168,7 +117,6 @@
 
 
 
-</div>
 
 
 
@@ -177,6 +125,9 @@
    <div style="margin-top:150px;">
 
        </div>
+
+
+
 
 
 

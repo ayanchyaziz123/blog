@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'user.apps.UserConfig',
     'programmingTutorial',
     'django.contrib.humanize',
+    'ckeditor',
 
 ]
 
