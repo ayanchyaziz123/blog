@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Post, Sliders
+from .models import Category, Post, Sliders, Contact
 
 
 from .models import Comment
@@ -28,6 +28,7 @@ class PostAdmin(admin.ModelAdmin):
 
 admin.site.register(Category)
 admin.site.register(Sliders)
+admin.site.register(Contact)
 
 
 

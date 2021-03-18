@@ -29,7 +29,7 @@ def home(request):
 def blog(request):
 
     Posts = Post.objects.all().order_by('-postTimeDate')
-    paginator = Paginator(Posts, 4)
+    paginator = Paginator(Posts, 3)
     page = request.GET.get('page')
 
     #?page = 2
